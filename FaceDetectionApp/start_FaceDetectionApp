@@ -1,0 +1,2 @@
+#!/bin/sh
+(cd /home/ubuntu/FaceDetectionApp/; sudo /usr/bin/docker-compose up -d  --build) >> /tmp/test

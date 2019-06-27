@@ -1,0 +1,8 @@
+<!doctype html>
+<title>Face Detection </title>
+{% if filename %}
+<h1>Face Detection :  {{ myhost}}     </h1>
+<h1><img src="{{ url_for('send_file', filename=filename) }}"> </h1>
+{% else %}
+  <h1>no image for whatever reason</h1>
+{% endif %}

@@ -1,0 +1,26 @@
+# docker-compose.yml
+version: '2'
+services:
+  flaskapp:
+    image: webapp-flask
+    build:
+      context: .
+      dockerfile: Dockerfile-flask
+    networks:
+      - web_network
+    volumes:
+      - .:/opt/services/flaskapp/src
+  nginx:
+    image:  "nginx:1.13.5"
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+    ports:
+      - 8080:80
+    networks:
+      - web_network
+    depends_on:
+      - flaskapp
+networks:
+  web_network:
+    driver: bridge
+

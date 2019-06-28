@@ -2,11 +2,6 @@
 ## var.tf
 ## Variable values for FaceDetection Cloud Infrastructure
 ##
-#variable "AWS_ACCESS_KEY" {default = "AKIA5XWENWZ7AN3W6RX3"}
-#variable "AWS_SECRET_KEY" {default = "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"}
-# or set the environment variable
-#AWS_SECRET_ACCESS_KEY=PiwbF61rGTj4T6hgNV8z+ET8iIYwrH2rhccDPD8K
-#AWS_ACCESS_KEY_ID=AKIA5XWENWZ7AN3W6RX3
 
 
 variable "AWS_REGION" {

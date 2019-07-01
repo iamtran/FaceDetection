@@ -55,6 +55,7 @@ variable "server_port" {
 variable "i2c_ami" {
   description = "OS image with flask AI engine for image caption"
   #default     = "ami-0949b16e4a69464f4"
-  default     = "ami-02d5cc2265b0fe8a4"
+  #default     = "ami-02d5cc2265b0fe8a4"
+  default     = "ami-01c7e29efc5719ba4"
 }
 

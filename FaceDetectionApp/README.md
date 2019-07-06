@@ -1,4 +1,4 @@
-Goal : 
+ 
 When App receive an image, it sends this image to facedetection to recognize the face and make a square mark
 around the face.
 

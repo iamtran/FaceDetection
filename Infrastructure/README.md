@@ -1,5 +1,6 @@
 ## Building Infrastructure as code consists of the following files:  
 <br>
+
 . auto_scale_lb.tf : 	Create load balancer and Auto scaler with 3 app
 
 . main.tf	         : Set up  configuration for App instances
